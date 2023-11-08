@@ -9,17 +9,6 @@ sensor = MPU9250(i2c)
 
 #print("MPU9250 id: " + hex(sensor.whoami))
 
-micropython_ota.ota_update(
-    ota_host, project_name,
-    filenames,
-    user=user,
-    passwd=passwd,
-    use_version_prefix=True,
-    hard_reset_device=True,
-    soft_reset_device=False,
-    timeout=5
-    )
-
 while True:
     #print("X=",sensor.acceleration)
     #print("X=",sensor.gyro[0])
