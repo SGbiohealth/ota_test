@@ -1,11 +1,10 @@
 from ota import OTAUpdater
-#from WIFI_CONFIG import SSID, PASSWORD
+from WIFI_CONFIG import SSID, PASSWORD
 
-SSID = "DDPillow"
-PASSWORD = "dp299792*"
 
-firmware_url = "https://raw.githubusercontent.com/pierreyvesbaloche/kevinmca_ota/main/"
+firmware_url ="https://raw.githubusercontent.com/JSShinnn/ota_test/main/"
+#firmware_url = "https://github.com/JSShinnn/ota_test/"
 
-ota_updater = OTAUpdater(SSID, PASSWORD, firmware_url, "main.py")
+ota_updater = OTAUpdater(SSID, PASSWORD, firmware_url, "test_ota.py")
 
-ota_updater.download_and_install_update_if_available()                                                                                                                                          
+ota_updater.download_and_install_update_if_available()   
